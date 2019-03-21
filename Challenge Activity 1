@@ -1,0 +1,39 @@
+/* Challenge Activity 1
+
+Write a java program to input your first name and last name, then say "hello"
+two ways, like this:
+ 
+Enter your first name: Michael
+Enter your last name: Fudge
+
+Hello, Michael Fudge!  
+Or should I say: Fudge, Michael!
+
+*/
+package helloyourname2ways;
+
+import java.util.Scanner;
+
+ 
+public class HelloYourName2Ways {
+//Construction.
+    public static void main(String[] args) {
+        //Scanner input
+        Scanner input = new Scanner (System.in); 
+        String firstName, lastName;
+        //print the name.
+        System.out.println("What is your Name ? ");
+        firstName = input.nextLine();
+        //Print the last name.
+        System.out.print("What is your last Name ? ");
+        lastName = input.nextLine();
+       
+        //Print out fist name and then last name.
+        System.out.printf("Hello, %s %s !!!\n", firstName, lastName);
+        //Print out Last name and then First name.
+        System.out.printf("Or Should I said %s %s !!!\n", lastName, firstName);
+        
+        
+    }
+    
+}
